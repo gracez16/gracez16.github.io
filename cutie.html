@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>ABC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Loading Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<!--Loading Flat UI -->
+	<link href="bootstrap.css" rel="stylesheet">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	 <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+	<style>
+		h1 {
+			text-align: center;
+		}
+	</style>
+	<script>
+	    var user;
+	    var userList = [];
+	    function getInfo() {
+		var name = document.getElementById("name").value;
+		var number = document.getElementById("phone").value;
+		var email = document.getElementById("email").value;
+		user = new Person(name, number, email);
+		userList.push(user);
+	    }
+	    function Person(name, number, email) {
+		this.name = name;
+		this.number = number;
+		this.email = email;
+	    }
+	</script>
+</head>
+
+<body>
+	<div class="jumbotron">
+<h1><img src="abc.png" width="120" height="100">Association to Benefit Children</h1>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid"> </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+<header>  
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> ABC </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+	
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="index.html">Home</a></li>
+		 <li><a href="aboutus.html">About Us</a></li>
+		 <li><a href="events.html">News + Events</a></li>
+		 <li><a href="programs.html">Programs</a></li>
+		 <li><a href="supportvolunteer.html">Support + Volunteer</a></li>
+		 <li><a href="feedback.html">Feedback</a></li>
+		 <li><a href="contactus.html">Contact Us</a></li>
+	 
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</header>
+
+
+<div class="jumbotron">
+	<h1>Echo Park Early Childhood Center: Cutie Patootie and The Graham School </h1>
+	<p>The Cutie Patootie Early Childhood Center and The Stephen & Cathy Graham School are located at Echo Park, ABC’s multi-service center for children and families. Here, four classrooms have been expanded to eight, increasing substantially the number of children to 129. Both early childhood education programs gain greatly from the comprehensive array of services that are available on-site and can “wrap around” to strengthen each child’s family. They include a children’s mental health clinic, an after school and weekend educational, recreational and mentoring program, preventive services, therapeutic groups for children in crisis, parent support groups and employment assistance. The Cutie Patootie Early Childhood Center serves infants, toddlers and preschoolers who play, learn and delight in beautiful classrooms that reflect the vigor and promise of its young students. Healthy, delicious meals and snacks are prepared daily. A comfortable and well stocked young children’s library and reading room and a technology center further augment the curriculum, and Bunny’s Playground will ensure the children a safe and exhilarating space to play. Home-based Head Start brings the philosophy and practices of the classroom to families in the community.</p>
+</div>
+
+	<!-- IMPORTING J/QUERY and theme js--->
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="bootstrap.minjs.js"></script>
+</body>
+</html>

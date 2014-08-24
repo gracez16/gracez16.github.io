@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>ABC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Loading Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<!--Loading Flat UI -->
+	<link href="bootstrap.css" rel="stylesheet">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	 <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+	<style>
+		h1 {
+			text-align: center;
+		}
+	</style>
+	<script>
+	    var user;
+	    var userList = [];
+	    function getInfo() {
+		var name = document.getElementById("name").value;
+		var number = document.getElementById("phone").value;
+		var email = document.getElementById("email").value;
+		user = new Person(name, number, email);
+		userList.push(user);
+	    }
+	    function Person(name, number, email) {
+		this.name = name;
+		this.number = number;
+		this.email = email;
+	    }
+	</script>
+</head>
+
+<body>
+	<div class="jumbotron">
+<h1><img src="abc.png" width="120" height="100">Association to Benefit Children</h1>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid"> </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+<header>  
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> ABC </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+	
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="index.html">Home</a></li>
+		 <li><a href="aboutus.html">About Us</a></li>
+		 <li><a href="events.html">News + Events</a></li>
+		 <li><a href="programs.html">Programs</a></li>
+		 <li><a href="supportvolunteer.html">Support + Volunteer</a></li>
+		 <li><a href="feedback.html">Feedback</a></li>
+		 <li><a href="contactus.html">Contact Us</a></li>
+	 
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</header>
+
+<div class="jumbotron">
+	<h1>Programs</h1>
+	<h2>Early Childhood Education</h2>
+	<p>Recognizing that long-term benefits are gained from intervening early in the lives of children living in poverty, the centerpiece of ABC is high-quality early childhood education. Young children in ABC’s preschools and early intervention programs thrive in classrooms that are alive with joyful songs, purposeful activities, brilliant colors and tender moments. There are corners to explore, mysteries to solve, books to discover, paint to splatter, drums to bang, steps to conquer and towers to build … and rebuild. Each school has its own special focus, yet all are rooted in ABC’s commitment to the principle that every child is entitled to the best possible start – one that is full of happiness, accomplishment and love. ABC’s schools celebrate children in all their exquisite diversity by appreciating their unique contributions, encouraging their optimum development, honoring their shared humanity and treasuring their infinite potential. ABC’s unique approach extends well beyond the individual child to embrace the whole family by providing the supportive services that each family member needs. Parents are integral to their children’s success, treasured partners in all of ABC’s programs.</p>
+		<ul data-role="listview">
+			<h4><a href="merricat.html">Merricat's Castle School</a></h4>
+			<h4><a href="cassidy.html">Cassidy's Place</a></h4>
+			<h4><a href="cutie.html">Cutie Patootie at Echo Park</a></h4>
+			<h4><a href="keith.html">The Keith Haring School</a></h4>
+			<h4><a href="variety.html">Variety Cody Gifford House</a></h4>
+		</ul>
+	<h2>Youth Services</h2>
+		<ul data-role="listview">
+			<h4><a href="after.html">After School Program</a></h4>
+			<h4><a href="los.html">Los Compalles</a></h4>
+			<h4><a href="summer.html">Summer Day Camp</a></h4>
+		</ul>
+	<h2>Housing and Family Support</h2>
+		<ul data-role="listview">
+			<h4><a href="abc.html">ABC's Supportive Housing</a></h4>
+			<h4><a href="pro.html">Program</a></h4>
+			<h4><a href="family.html">Family Preservation and Support</a></h4>
+			<h4><a href="service.html">Services at Echo Park</a></h4>
+		</ul>
+		
+</div>
+
+	<!-- IMPORTING J/QUERY and theme js--->
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="bootstrap.minjs.js"></script>
+</body>
+</html>

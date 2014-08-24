@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>ABC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Loading Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<!--Loading Flat UI -->
+	<link href="bootstrap.css" rel="stylesheet">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	 <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+	<style>
+		h1 {
+			text-align: center;
+		}
+	</style>
+	<script>
+	    var user;
+	    var userList = [];
+	    function getInfo() {
+		var name = document.getElementById("name").value;
+		var number = document.getElementById("phone").value;
+		var email = document.getElementById("email").value;
+		user = new Person(name, number, email);
+		userList.push(user);
+	    }
+	    function Person(name, number, email) {
+		this.name = name;
+		this.number = number;
+		this.email = email;
+	    }
+	</script>
+</head>
+
+<body>
+	<div class="jumbotron">
+<h1><img src="abc.png" width="120" height="100">Association to Benefit Children</h1>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid"> </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+<header>  
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> ABC </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+	
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="index.html">Home</a></li>
+		 <li><a href="aboutus.html">About Us</a></li>
+		 <li><a href="events.html">News + Events</a></li>
+		 <li><a href="programs.html">Programs</a></li>
+		 <li><a href="supportvolunteer.html">Support + Volunteer</a></li>
+		 <li><a href="feedback.html">Feedback</a></li>
+		 <li><a href="contactus.html">Contact Us</a></li>
+	 
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</header>
+
+<div class="jumbotron">
+  <h1>Volunteer and Internship Opportunities</h1>
+  <p>At ABC, volunteers are treasured allies who assist early childhood teachers in their work with infants, 
+    toddlers and preschoolers.</p>
+  <p>ABC's five early childhood programs work alongside youth services staff to establish one-on-one mentoring relationships with school-aged children in ABC's afterschool programs. ABC also opens its doors to families on Saturdays during the school year and on Wednesday evenings during the summer with educational programs for parents and recreational activities for children along with hot meals. Volunteers are especially critical to the success of both.<p>
+  <h1>Get Involved!</h1>
+  <p>Choose one of five volunteering opportunities in our early childhood program.</p>
+  <p><b>&raquo; Cassidy's Place:</b> Focuses on children from the ages of three to five; who live in poverty and suffer from the debilitating consequences of serious medical conditions and special needs. Located on 419 East 86th street (between First and York Avenue). Program operates year-round, Monday through Friday from 9:00a.m. to 6:00 p.m. through the school year and 9:00 a.m. to 3:30 p.m. during the summer. For more information about the program and volunteering opportunities please contact Patricia Mckeena at (212)845-3855 or pmckenna@a-b-c.org
+  </P> 
+  <br>
+  <p><b>&raquo; Merricat's Castle School:</b> A preschool program which integrates homeless, disabled and terminally ill children with healthy children from the school’s neighborhood; ages two threw 5. Located on 316 East 88th Street (between First and Second Avenues) Program operates from September through June, Monday through Friday from 9:00 a.m. to 3:30 p.m.
+  For more information about the program and volunteering opportunities please contact Linda Wosczyk at (212)534-3856 or lwosczyk@a-b-c.org 
+  </P> 
+  <br>
+  <p><b>&raquo; Variety Cody Grifford House:</b> Home to ABC’s early intervention program for infants and toddlers who struggle with severe developmental disabilities and serious medical conditions.Located at 404 East 91st Street (between First and Second Avenues)Program operates year-round, Monday through Friday from 9:00 a.m. to 3:00 p.m. For more information about the program and volunteering opportunities please contact Chrissy Zaccario at (212)369-2010 ext.302 or zaccario@a-b-c.org 
+  </P> 
+  <br>
+  <p><b>&raquo; The Keith Haring School:</b> A small early intervention program for children who reside at ABC’s permanent supportive program for medically fragile families as well as for children from the neighborhood. Located at 318 East 116th Street (between First and Second Avenues)Operates year-round, Monday through Friday from 9:00 a.m. to 3:00 p.m.For more information about the program and volunteering opportunities please contact Meghan Canning at (212)426-23960 ext.1 or mcanning@a-b-c.org 
+  </P> 
+  <br>
+  <p><b>&raquo; Echo Park Childhood Center:</b> Located at ABC’s large multi-service center, Echo Park, and provides enriched educational programming for infants, toddlers and preschoolers.1841 Park Avenue (NE corner of East 126th Street) Program operates year-round, Monday through Friday from 8:30 a.m. to 3:30 p.m. during the school year and 8:30 a.m. to 3:00 p.m. For more information about the program and volunteering opportunities please contact Shawana Eaddy at (212) 426-3960 ext. 11 or seaddy@a-b-c.org
+  </P> 
+  </div>
+  <p></p>
+<p></p>
+<form role="form">
+      <div class="form-group">
+     <label for="name"><p>Sign Up To Volunteer!</p></label>
+     <input type="text" id= "name" class="form-control" placeholder="Your Name">
+	<input type="text" id= "email" class="form-control" placeholder="Your Email">
+	<input type="text" id= "phone" class="form-control" placeholder="Your Phone Number (+1xxx-xxx-xxx)">
+      </div>
+      <button class="btn btn-default" onclick="getInfo()">Submit</button>
+</form>
+
+	<!-- IMPORTING J/QUERY and theme js--->
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="bootstrap.minjs.js"></script>
+</body>
+</html>
