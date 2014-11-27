@@ -1,212 +1,237 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>ABC</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Loading Bootstrap -->
-	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!--Loading Flat UI -->
-	<link href="bootstrap.css" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="images/favicon.ico">
-	
-	 <!-- Custom styles for this template -->
+    <meta charset="utf-8">
+    <title>ABC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--Loading Flat UI -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-	
-	<!-- Ziggeo -->
-	<link rel="stylesheet" href="http://assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
-	<script src="http://assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
-	<script>ZiggeoApi.token = "992a9a4ea63181a9647565208dd6b979";</script>
-	
-	<style>
-		h1 {
-			text-align: center;
-		}
-	</style>
-	<script>
-	    var user;
-	    var userList = [];
-	    function getInfo() {
-		var name = document.getElementById("name").value;
-		var number = document.getElementById("phone").value;
-		var email = document.getElementById("email").value;
-		user = new Person(name, number, email);
-		userList.push(user);
-		if(user.number != "") {
-			sendMessage(user.number);
-		}
-	    }
-	    function Person(name, number, email) {
-		this.name = name;
-		this.number = number;
-		this.email = email;
-	    }
-	     function sendMessage(number) {
-		this.number= number;
-		$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[this.number]=19172541907&postparam[Hi! This the Association to Benefit Children. Welcome to our text message list!]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
-	    }
-	</script>
+
+    <!-- Ziggeo -->
+    <link rel="stylesheet" href="http://assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
+    <script src="http://assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+    <script>
+        ZiggeoApi.token = "992a9a4ea63181a9647565208dd6b979";
+    </script>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        var user;
+        var userList = [];
+
+        function getInfo() {
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            user = new Person(name, number, email);
+            userList.push(user);
+            if (user.number != "") {
+                sendMessage(user.number);
+            }
+        }
+
+        function Person(name, number, email) {
+            this.name = name;
+            this.number = number;
+            this.email = email;
+        }
+
+        function sendMessage(number) {
+            this.number = number;
+            $.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[this.number]=19172541907&postparam[Hi! This the Association to Benefit Children. Welcome to our text message list!]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
+        }
+    </script>
 </head>
 
 <body>
-	<div class="jumbotron">
-<h1><img src="abc.png" width="120" height="100">Association to Benefit Children</h1>
-	</div>
-	<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid"> </div>
-    <!-- Brand and toggle get grouped for better mobile display -->
-<header>  
-   <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"> ABC </a>
+    <div class="jumbotron">
+        <h1><img src="abc.png" width="120" height="100">Association to Benefit Children</h1>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid"> </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <header>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> ABC </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a>
+                    </li>
+                    <li><a href="events.html">News + Events</a>
+                    </li>
+                    <li><a href="programs.html">Programs</a>
+                    </li>
+                    <li><a href="supportvolunteer.html">Support + Volunteer</a>
+                    </li>
+                    <li><a href="feedback.html">Feedback</a>
+                    </li>
+                    <li><a href="contactus.html">Contact Us</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+    </nav>
+    </header>
+
+    <!-- Carousel
+=======================================================================-->
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <center>
+                            <ziggeo ziggeo-video="_abcfront" ziggeo-width=500 ziggeo-height=320>
+                            </ziggeo>
+                        </center>
+                        <p><a class="btn btn-lg btn-primary" href="supportvolunteer.html" role="button">Sign up today</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>News & Events</h1>
+                        <img src="News.png" alt="Generic placeholder image" style="width: 250px; height: 250px;">
+                        <p>Curious about what we're up to? Check out our events.</p>
+                        <p><a class="btn btn-lg btn-primary" href="events.html" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img src="thirdcarousel.png" alt="Generic placeholder image" style="width: 380px; height: 300px;">
+                        <h1>Words from our Volunteers</h1>
+
+                        <p><a class="btn btn-lg btn-primary" href="feedback.html" role="button">Browse gallery</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-	
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-         <li><a href="index.html">Home</a></li>
-		 <li><a href="aboutus.html">About Us</a></li>
-		 <li><a href="events.html">News + Events</a></li>
-		 <li><a href="programs.html">Programs</a></li>
-		 <li><a href="supportvolunteer.html">Support + Volunteer</a></li>
-		 <li><a href="feedback.html">Feedback</a></li>
-		 <li><a href="contactus.html">Contact Us</a></li>
-	 
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-</header>
-
-<!-- Carousel
+    <!--PAYPAL/3 Things
 =======================================================================-->
-<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-		<div class="container">
-            <div class="carousel-caption">
-            <center>
-              <ziggeo ziggeo-video="_abcfront" 
-			ziggeo-width=500
-			ziggeo-height=320>
-			</ziggeo>
-	</center>
-	<p><a class="btn btn-lg btn-primary" href="supportvolunteer.html" role="button">Sign up today</a></p>
-            </div>
-         </div>
-		</div>
-    <div class="item">
-		<div class="container">
-            <div class="carousel-caption">
-              <h1>News & Events</h1>
-			  <img src="News.png" alt="Generic placeholder image" style="width: 250px; height: 250px;">
-              <p>Curious about what we're up to? Check out our events.</p>
-              <p><a class="btn btn-lg btn-primary" href="events.html" role="button">Learn more</a></p>
-            </div>
-          </div>
-		  </div>
-    <div class="item">
-		<div class="container">
-            <div class="carousel-caption">
-			<img src="thirdcarousel.png" alt="Generic placeholder image" style="width: 380px; height: 300px;">
-              <h1>Words from our Volunteers</h1>
-              
-              <p><a class="btn btn-lg btn-primary" href="feedback.html" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-		</div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-
-<!--PAYPAL/3 Things
-=======================================================================-->
-	<div class="container marketing">
-	<!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="Childpic.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Quick Help</h2>
-          <p>In order to support this program, please donate. The money will go towards childhood education for disadvantaged infants, toddlers and preschoolers, educational advocacy, housing assistance, mental health services, family support and preservation, youth leadership development and mentoring.</p>
-          <p>
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_donations">
-                <input type="hidden" name="business" value="nastasia.efremkina@gmail.com">
-                <input type="hidden" name="lc" value="US">
-                <input type="hidden" name="item_name" value="ABC: Association to Benefit Children">
-                <input type="hidden" name="no_note" value="0">
-                <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="Childpic.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Quick Help</h2>
+                <p>In order to support this program, please donate. The money will go towards childhood education for disadvantaged infants, toddlers and preschoolers, educational advocacy, housing assistance, mental health services, family support and preservation, youth leadership development and mentoring.</p>
+                <p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_donations">
+                        <input type="hidden" name="business" value="nastasia.efremkina@gmail.com">
+                        <input type="hidden" name="lc" value="US">
+                        <input type="hidden" name="item_name" value="ABC: Association to Benefit Children">
+                        <input type="hidden" name="no_note" value="0">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
 
 
-            <!-- <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                    <!-- <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
  -->
-          </p>
+                </p>
 
 
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="Volunteerpic.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Volunteer</h2>
-          <p>If you live in the NYC area, enter your information here for updates and volunteering opportunities. If you don't live in NYC, click<a href="http://www.impactonline.org/"> here. </a></p>
-          <p><a class="btn btn-default" href="supportvolunteer.html" role="button">View details &raquo;</a></p>
-    
-		</div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="Playground.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Feedback</h2>
-          <p>Hear from our volunteers and children about all of the things that our organization has done!
-          </p>
-          <p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="Volunteerpic.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Volunteer</h2>
+                <p>If you live in the NYC area, enter your information here for updates and volunteering opportunities. If you don't live in NYC, click<a href="http://www.impactonline.org/"> here. </a>
+                </p>
+                <p><a class="btn btn-default" href="supportvolunteer.html" role="button">View details &raquo;</a>
+                </p>
+
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="Playground.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Feedback</h2>
+                <p>Hear from our volunteers and children about all of the things that our organization has done!
+                </p>
+                <p>
 
 
-            <a class="btn btn-default" href="feedback.html" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-	  
-<!--Sign Up For Our Newsletter!
+                    <a class="btn btn-default" href="feedback.html" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!--Sign Up For Our Newsletter!
 =======================================================================-->
-<p></p>
-<p></p>
-<form role="form">
-      <div class="form-group">
-     <label for="name"><p>Sign Up For Our Newsletter! You will also be on our text message chain.</p></label>
-     <input type="text" id= "name" class="form-control" placeholder="Your Name">
-	<input type="text" id= "email" class="form-control" placeholder="Your Email">
-	<input type="text" id= "phone" class="form-control" placeholder="Your Phone Number (1xxx-xxx-xxx)">
-      </div>
-      <button class="btn btn-default" onclick="getInfo()">Submit</button>
-</form>
+        <p></p>
+        <p></p>
+        <form role="form">
+            <div class="form-group">
+                <label for="name">
+                    <p>Sign Up For Our Newsletter! You will also be on our text message chain.</p>
+                </label>
+                <input type="text" id="name" class="form-control" placeholder="Your Name">
+                <input type="text" id="email" class="form-control" placeholder="Your Email">
+                <input type="text" id="phone" class="form-control" placeholder="Your Phone Number (1xxx-xxx-xxx)">
+            </div>
+            <button class="btn btn-default" onclick="getInfo()">Submit</button>
+        </form>
 
-<!-- IMPORTING J/QUERY and theme js--->
-	
-		<script src="jquery-1.11.1.min.js"></script>
-		<script src="bootstrap.min.js"></script>
-		
-<!-- Placed at the end of the document so the pages load faster -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="docs.min.js"></script>
+        <!-- IMPORTING J/QUERY and theme js--->
+
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="docs.min.js"></script>
 </body>
+
 </html>
